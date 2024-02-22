@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-xvzs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/bootstrap/rhtap-demo-lpgw-tenant/e2e-nodejs/nodejs-health-check-xvzs@sha256:6020d3983e82597b26b65d86eb53470072892ad1932cdd5d0202d53d92991d97
+        name: my-nodejs
+        resources: {}
+status: {}
